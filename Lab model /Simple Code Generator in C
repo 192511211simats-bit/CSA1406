@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+    printf("Three Address Code:\n");
+    printf("t1 = a + b\n");
+    printf("t2 = t1 - c\n");
+    printf("x = t2\n");
+
+    printf("\nAssembly-like Instructions:\n");
+
+    printf("MOV R0, a\n");
+    printf("ADD R0, b\n");
+    printf("MOV t1, R0\n");
+
+    printf("MOV R0, t1\n");
+    printf("SUB R0, c\n");
+    printf("MOV t2, R0\n");
+
+    printf("MOV R0, t2\n");
+    printf("MOV x, R0\n");
+
+    return 0;
+}
